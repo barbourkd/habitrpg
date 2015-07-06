@@ -1095,6 +1095,7 @@ api.quests =
     completion: t("questDilatoryCompletion")
     value: 0
     canBuy: false
+    category: 'world'
     boss:
       name: t("questDilatoryBoss")
       # We ran an average of progress{up,down} on users over 5 days: {up:805025,down:1324423}. /5*30 (we want the
@@ -1137,6 +1138,7 @@ api.quests =
     completionChat: t("questStressbeastCompletionChat")
     value: 0
     canBuy: false
+    category: 'world'
     boss:
       name: t("questStressbeastBoss")
       hp: 2750000
@@ -1180,7 +1182,7 @@ api.quests =
     notes: t('questEvilSantaNotes')
     completion: t('questEvilSantaCompletion')
     value: 4 # Gem cost to buy, GP sell-back
-    #mechanic: enum['perfectDailies', ...]
+    category: 'pet'
     boss:
       name: t('questEvilSantaBoss') # name of the boss himself (eg, Vice)
       hp: 300
@@ -1199,6 +1201,7 @@ api.quests =
     completion: t('questEvilSanta2Completion')
     value: 4
     previous: 'evilsanta'
+    category: 'pet'
     collect:
       tracks: text: t('questEvilSanta2CollectTracks'), count: 20
       branches: text: t('questEvilSanta2CollectBranches'), count: 10
@@ -1214,6 +1217,7 @@ api.quests =
     notes: t('questGryphonNotes')
     completion: t('questGryphonCompletion')
     value: 4 # Gem cost to buy, GP sell-back
+    category: 'pet'
     boss:
       name: t('questGryphonBoss') # name of the boss himself (eg, Vice)
       hp: 300
@@ -1233,6 +1237,7 @@ api.quests =
     notes: t('questHedgehogNotes')
     completion: t('questHedgehogCompletion')
     value: 4 # Gem cost to buy, GP sell-back
+    category: 'pet'
     boss:
       name: t('questHedgehogBoss') # name of the boss himself (eg, Vice)
       hp: 400
@@ -1252,6 +1257,7 @@ api.quests =
     notes: t('questGhostStagNotes')
     completion: t('questGhostStagCompletion')
     value: 4
+    category: 'pet'
     boss:
       name: t('questGhostStagBoss')
       hp: 1200
@@ -1271,6 +1277,7 @@ api.quests =
     notes: t('questVice1Notes')
     value: 4
     lvl: 30
+    category: 'unlockable'
     boss:
       name: t('questVice1Boss')
       hp: 750
@@ -1286,7 +1293,8 @@ api.quests =
     text: t('questVice2Text')
     notes: t('questVice2Notes')
     value: 4
-    lvl: 35
+    lvl: 30
+    category: 'unlockable'
     previous: 'vice1'
     collect:
       lightCrystal: text: t('questVice2CollectLightCrystal'), count: 45
@@ -1303,7 +1311,8 @@ api.quests =
     completion: t('questVice3Completion')
     previous: 'vice2'
     value: 4
-    lvl: 40
+    lvl: 30
+    category: 'unlockable'
     boss:
       name: t('questVice3Boss')
       hp: 1500
@@ -1325,6 +1334,7 @@ api.quests =
     completion: t('questEggHuntCompletion')
     value: 1
     canBuy: false
+    category: 'pet'
     collect:
       plainEgg: text: t('questEggHuntCollectPlainEgg'), count: 100
     drop:
@@ -1348,6 +1358,7 @@ api.quests =
     notes: t('questRatNotes')
     completion: t('questRatCompletion')
     value: 4
+    category: 'pet'
     boss:
       name: t('questRatBoss')
       hp: 1200
@@ -1367,6 +1378,7 @@ api.quests =
     notes: t('questOctopusNotes')
     completion: t('questOctopusCompletion')
     value: 4
+    category: 'pet'
     boss:
       name: t('questOctopusBoss')
       hp: 1200
@@ -1386,6 +1398,7 @@ api.quests =
     notes: t('questSeahorseNotes')
     completion: t('questSeahorseCompletion')
     value: 4
+    category: 'pet'
     boss:
       name: t('questSeahorseBoss')
       hp: 300
@@ -1405,6 +1418,7 @@ api.quests =
     notes: t('questAtom1Notes')
     value: 4
     lvl: 15
+    category: 'unlockable'
     collect:
       soapBars: text: t('questAtom1CollectSoapBars'), count: 20
     drop:
@@ -1419,6 +1433,7 @@ api.quests =
     previous: 'atom1'
     value: 4
     lvl: 15
+    category: 'unlockable'
     boss:
       name: t('questAtom2Boss')
       hp: 300
@@ -1436,6 +1451,7 @@ api.quests =
     completion: t('questAtom3Completion')
     value: 4
     lvl: 15
+    category: 'unlockable'
     boss:
       name: t('questAtom3Boss')
       hp: 800
@@ -1454,6 +1470,7 @@ api.quests =
     notes:      t('questHarpyNotes')
     completion: t('questHarpyCompletion')
     value: 4
+    category: 'pet'
     boss:
       name: t('questHarpyBoss')
       hp: 600
@@ -1473,6 +1490,7 @@ api.quests =
     notes:      t('questRoosterNotes')
     completion: t('questRoosterCompletion')
     value: 4
+    category: 'pet'
     boss:
       name: t('questRoosterBoss')
       hp: 300
@@ -1492,6 +1510,7 @@ api.quests =
     notes:      t('questSpiderNotes')
     completion: t('questSpiderCompletion')
     value: 4
+    category: 'pet'
     boss:
       name: t('questSpiderBoss')
       hp: 400
@@ -1511,6 +1530,7 @@ api.quests =
     notes: t('questMoonstone1Notes')
     value: 4
     lvl: 60
+    category: 'unlockable'
     collect:
       moonstone: text: t('questMoonstone1CollectMoonstone'), count: 500
     drop:
@@ -1523,8 +1543,9 @@ api.quests =
     text: t('questMoonstone2Text')
     notes: t('questMoonstone2Notes')
     value: 4
-    lvl: 65
+    lvl: 60
     previous: 'moonstone1'
+    category: 'unlockable'
     boss:
       name: t('questMoonstone2Boss')
       hp: 1500
@@ -1541,7 +1562,8 @@ api.quests =
     completion: t('questMoonstone3Completion')
     previous: 'moonstone2'
     value: 4
-    lvl: 70
+    lvl: 60
+    category: 'unlockable'
     boss:
       name: t('questMoonstone3Boss')
       hp: 2000
@@ -1566,6 +1588,7 @@ api.quests =
     notes: t('questGoldenknight1Notes')
     value: 4
     lvl: 40
+    category: 'unlockable'
     collect:
       testimony: text: t('questGoldenknight1CollectTestimony'), count: 300
     drop:
@@ -1579,7 +1602,8 @@ api.quests =
     notes: t('questGoldenknight2Notes')
     value: 4
     previous: 'goldenknight1'
-    lvl: 45
+    lvl: 40
+    category: 'unlockable'
     boss:
       name: t('questGoldenknight2Boss')
       hp: 1000
@@ -1596,7 +1620,8 @@ api.quests =
     completion: t('questGoldenknight3Completion')
     previous: 'goldenknight2'
     value: 4
-    lvl: 50
+    lvl: 40
+    category: 'unlockable'
     boss:
       name: t('questGoldenknight3Boss')
       hp: 1700
@@ -1618,7 +1643,8 @@ api.quests =
     notes: t('questBasilistNotes')
     completion: t('questBasilistCompletion')
     canBuy: false
-    value: 4
+    category: 'unlockable'
+    unlockCondition: t('inviteFriends')
     boss:
       name: t('questBasilistBoss')
       hp: 100
@@ -1632,6 +1658,7 @@ api.quests =
     notes: t('questOwlNotes')
     completion: t('questOwlCompletion')
     value: 4
+    category: 'pet'
     boss:
       name: t('questOwlBoss')
       hp: 500
@@ -1651,6 +1678,7 @@ api.quests =
     notes: t('questPenguinNotes')
     completion: t('questPenguinCompletion')
     value: 4
+    category: 'pet'
     boss:
       name: t('questPenguinBoss')
       hp: 400
@@ -1670,6 +1698,7 @@ api.quests =
     notes: t('questTRexNotes')
     completion: t('questTRexCompletion')
     value: 4
+    category: 'pet'
     boss:
       name: t('questTRexBoss')
       hp: 800
@@ -1689,6 +1718,7 @@ api.quests =
     notes: t('questTRexUndeadNotes')
     completion: t('questTRexUndeadCompletion')
     value: 4
+    category: 'pet'
     boss:
       name: t('questTRexUndeadBoss')
       hp: 500
@@ -1714,6 +1744,7 @@ api.quests =
     notes: t('questRockNotes')
     completion: t('questRockCompletion')
     value: 4
+    category: 'pet'
     boss:
       name: t('questRockBoss')
       hp: 400
@@ -1733,6 +1764,7 @@ api.quests =
     notes: t('questBunnyNotes')
     completion: t('questBunnyCompletion')
     value: 4
+    category: 'pet'
     boss:
       name: t('questBunnyBoss')
       hp: 300
@@ -1752,6 +1784,7 @@ api.quests =
     notes: t('questSlimeNotes')
     completion: t('questSlimeCompletion')
     value: 4
+    category: 'pet'
     boss:
       name: t('questSlimeBoss')
       hp: 400
@@ -1771,6 +1804,7 @@ api.quests =
     notes: t('questSheepNotes')
     completion: t('questSheepCompletion')
     value: 4
+    category: 'pet'
     boss:
       name: t('questSheepBoss')
       hp: 300
@@ -1790,6 +1824,7 @@ api.quests =
     notes: t('questKrakenNotes')
     completion: t('questKrakenCompletion')
     value: 4
+    category: 'pet'
     boss:
       name: t('questKrakenBoss')
       hp: 800

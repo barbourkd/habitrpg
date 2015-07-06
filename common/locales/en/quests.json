@@ -1,6 +1,11 @@
 {
     "quests": "Quests",
     "quest": "quest",
+    "yourQuests": "Your Quests",
+    "questsForSale": "Quests for Sale",
+    "petQuests": "Pet and Mount Quests",
+    "unlockableQuests": "Unlockable Quests",
+    "goldQuests": "Gold-Purchasable Quests",
     "questDetails": "Quest Details",
     "invitations": "Invitations",
     "completed": "Completed!",
