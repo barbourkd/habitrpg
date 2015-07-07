@@ -1,6 +1,6 @@
 habitrpg.controller("InventoryCtrl",
-  ['$rootScope', '$scope', 'Shared', '$window', 'User', 'Content', 'Analytics',
-  function($rootScope, $scope, Shared, $window, User, Content, Analytics) {
+  ['$rootScope', '$scope', 'Shared', '$window', 'User', 'Content', 'Analytics', 'Quests',
+  function($rootScope, $scope, Shared, $window, User, Content, Analytics, Quests) {
 
     var user = User.user;
 
@@ -10,6 +10,9 @@ habitrpg.controller("InventoryCtrl",
     $scope.selectedPotion = null; // {index: 5, name: "Red", value: 3}
     $scope.totalPets = _.size(Content.dropEggs) * _.size(Content.hatchingPotions);
     $scope.totalMounts = _.size(Content.dropEggs) * _.size(Content.hatchingPotions);
+
+    // Show locked styles for inaccessible Quests
+    $scope.lockQuest = Quests.lockQuest;
 
     // count egg, food, hatchingPotion stack totals
     var countStacks = function(items) { return _.reduce(items,function(m,v){return m+v;},0);}

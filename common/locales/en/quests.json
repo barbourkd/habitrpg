@@ -42,7 +42,7 @@
     "noScrolls": "You don't have any quest scrolls.",
     "scrollsText1": "Quests require parties. If you want to quest solo,",
     "scrollsText2": "create an empty party",
-    "scrollsPre": "You need to complete the previous quest to start this one!",
+    "scrollsPre": "You haven't unlocked this quest yet!",
     "completedQuests": "Completed the following quests",
     "mustComplete": "You must first complete <%= quest %>.",
     "mustLevel": "You must be level <%= level %>.",

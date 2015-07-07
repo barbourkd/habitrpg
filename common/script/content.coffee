@@ -1642,7 +1642,6 @@ api.quests =
     text: t('questBasilistText')
     notes: t('questBasilistNotes')
     completion: t('questBasilistCompletion')
-    canBuy: false
     category: 'unlockable'
     unlockCondition: t('inviteFriends')
     boss:
@@ -1846,6 +1845,10 @@ _.each api.quests, (v,key) ->
     _.defaults b, {str:1,def:1}
     if b.rage
       _.defaults b.rage, {title:t('bossRageTitle'),description:t('bossRageDescription')}
+
+api.questsByLevel =
+  _.sortBy api.quests, (quest) ->
+    quest.lvl || 0
 
 api.backgrounds =
   backgrounds062014:
